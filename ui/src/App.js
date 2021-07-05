@@ -19,12 +19,12 @@ import Footer from './Components/Footer';
 const ipfsGateway = `https://ipfs.io/ipfs`;
 
 // TODO - comment the following two lines
-const provider = new ethers.providers.InfuraProvider("rinkeby");
-const myGallery = "0x6cb457d583340099CadcBde4E05Eaa32488a6027";
+// const provider = new ethers.providers.InfuraProvider("rinkeby");
+// const myGallery = "0x6cb457d583340099CadcBde4E05Eaa32488a6027";
 
 // TODO - uncomment the following and update the contract address to that of your local migration
-// const provider = new ethers.providers.JsonRpcProvider(`http://localhost:8545`);
-// const myGallery = "0x8408acB27E7068c29485BC471C681cb30E62aA73";
+const provider = new ethers.providers.JsonRpcProvider(`http://localhost:8545`);
+const myGallery = "0xbD2B6A9130a149330216D451a7364D6ae0020a58";
 
 const galleryAbi = [
   "function totalSupply() view returns (uint)",
